@@ -2,6 +2,12 @@
 
 ### An automated air freight scheduling service.
 
+To get started, clone the repository on your machine and run
+
+```
+npm install
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
