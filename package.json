@@ -4,6 +4,7 @@
     "description": "An automated air freight scheduling service.",
     "private": true,
     "dependencies": {
+        "@babel/runtime": "^7.8.7",
         "@material-ui/core": "^4.9.5",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.5.0",
@@ -24,7 +25,7 @@
         "start": "npm run webpack && nodemon --exec babel-node ./bin/www",
         "lint": "eslint . --ext .js",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "mocha --require @babel/register",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
@@ -45,7 +46,12 @@
     "devDependencies": {
         "@babel/cli": "^7.0.0",
         "@babel/node": "^7.8.4",
+        "@babel/plugin-transform-runtime": "^7.8.3",
+        "@babel/register": "^7.8.6",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
         "file-loader": "^5.1.0",
+        "mocha": "^7.1.0",
         "nodemon": "^2.0.2",
         "webpack-cli": "^3.3.11"
     }
