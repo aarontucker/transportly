@@ -1,0 +1,46 @@
+body {
+    position: relative;
+    background-color: #efefef;
+    color: #333;
+    font-family: Roboto;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.container {
+    max-height: 440px;
+}
+
+.schedule-box {
+    margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+    h1,
+    h2 {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .MuiButton-root.route-button {
+        position: absolute;
+        top: 2.5rem;
+        right: 1rem;
+    }
+}

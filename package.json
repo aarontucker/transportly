@@ -1,34 +1,52 @@
 {
-  "name": "transportly",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "transportly",
+    "version": "0.1.0",
+    "description": "An automated air freight scheduling service.",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.9.5",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "axios": "^0.19.2",
+        "ejs": "^3.0.1",
+        "eslint": "^6.8.0",
+        "express": "^4.17.1",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.0",
+        "typeface-roboto": "0.0.75",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "webpack": "webpack --mode development",
+        "start": "npm run webpack && nodemon --exec babel-node ./bin/www",
+        "lint": "eslint . --ext .js",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/node": "^7.8.4",
+        "file-loader": "^5.1.0",
+        "nodemon": "^2.0.2",
+        "webpack-cli": "^3.3.11"
+    }
 }
